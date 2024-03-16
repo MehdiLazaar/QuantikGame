@@ -1,0 +1,224 @@
+body {
+    background-color: #37103b; /* Violet foncé */
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Police de caractères moderne */
+    color: #000000; /* Couleur de texte blanche */
+}
+
+/* Styles pour les titres */
+h1 {
+
+    font-size: 70px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #00ffcc;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3 {
+    text-align: left;
+}
+.containerdeH1{
+    display: flex;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+    border-radius: 10px;
+    width: 105px;
+    border: 2px ;
+    padding: 15px;
+    margin: 0 auto 25px;
+}
+
+
+th {
+    background-color: #8B4513;
+    border: 2px solid #6B4226;
+    padding: 10px;
+}
+
+
+td {
+
+    background-color: #D2B48C;
+    border: 1px solid #6B4226;
+    padding: 20px;
+}
+
+/* Game container styles */
+.jeu {
+    margin: 0 auto;
+}
+
+/* Valid pose styles */
+.validePose {
+    background-color: #19f319;
+
+}
+
+/* Invalid pose styles */
+.nonValide {
+    background-color: #e01212;
+
+}
+
+
+
+/* Case styles */
+#case {
+    border: 3px solid black;
+    padding: 15px;
+    width: 55px;
+    height: 55px;
+
+}
+
+/* Button styles */
+button {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+.annuler-btn {
+    background-color: red;
+    color: white;
+}
+
+/* Image styles */
+img {
+    width: 50px;
+}
+
+/* Selected piece styles */
+td:has(.selectPiece) {
+    background-color: #d9a40d;
+
+
+}
+
+/* Available pieces styles */
+td:has(.piecesDispo) {
+
+}
+
+/* Replay button styles */
+.replay {
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+
+}
+
+/* Black victory styles */
+td:has(.victoire-noire) {
+    background-color: #ffffff;
+
+}
+
+/* White victory styles */
+td:has(.victoire-blanc) {
+    background-color: #ffffff;
+
+}
+.blue-button {
+    background-color: blue;
+    color: white;
+}
+footer {
+    background-color: #939191; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bouton-accueil {
+    position: relative;
+    display: inline-block;
+    background-color: transparent; /* Fond transparent */
+    color: #fff; /* Couleur du texte blanche */
+    border: 2px solid #398ac9; /* Bordure solide */
+    border-radius: 50px; /* Coins arrondis pour une forme de capsule */
+    padding: 15px 30px; /* Rembourrage */
+    margin-bottom: 50px;
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Gras */
+    text-decoration: none; /* Pas de soulignement */
+    overflow: hidden; /* Masquer le contenu en dehors du bouton */
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s; /* Transition en douceur */
+}
+
+/* Effet d'animation */
+.bouton-accueil::before {
+    content: ''; /* Ajouter un élément pseudo-élément */
+    position: absolute; /* Position absolue par rapport au bouton */
+    top: 50%; /* Positionné à mi-hauteur */
+    left: 50%; /* Positionné à mi-largeur */
+    width: 300%; /* Largeur trois fois supérieure au bouton */
+    height: 300%; /* Hauteur trois fois supérieure au bouton */
+    background-color: #05e1d0; /* Couleur de fond */
+    border-radius: 50%; /* Coins arrondis */
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s; /* Transition en douceur */
+    z-index: -1; /* Position en arrière-plan par rapport au bouton */
+    transform: translate(-50%, -50%); /* Déplacer de moitié de sa propre taille */
+}
+
+/* Effet d'animation au survol */
+.bouton-accueil:hover::before {
+    width: 0; /* Rétrécir à zéro */
+    height: 0; /* Rétrécir à zéro */
+    top: 50%; /* Maintenir à mi-hauteur */
+    left: 50%; /* Maintenir à mi-largeur */
+}
+.bouton-annuler {
+    background-color: red; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px; /* Ajoute un peu d'espace autour du texte */
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold; /* Gras */
+    text-decoration: none; /* Pas de soulignement */
+    transition: background-color 0.3s; /* Ajoute une transition en douceur */
+}
+
+.bouton-annuler:hover {
+    background-color: #cb0101; /* Couleur de fond au survol */
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pieces-colonne, .plateau-colonne {
+    flex-basis: 30%; /* Ajustez selon vos besoins */
+}
+
+.pieces-colonne {
+    background-color: lightgray; /* Couleur de fond */
+    padding: 10px;
+}
+
+.plateau-colonne {
+    text-align: center;
+}
+
+/* Assurez-vous d'ajuster ces styles selon vos besoins */
+
+

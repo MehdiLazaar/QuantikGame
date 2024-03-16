@@ -1,0 +1,97 @@
+/* style.css */
+
+body {
+
+    background-color: #301934;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+
+h1 {
+
+    font-size: 70px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #00ffcc;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3 {
+    text-align: left;
+}
+
+
+
+.login-form {
+    width: 300px;
+}
+
+.quantik {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    color: #00ffcc;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+
+form {
+    width: 300px;
+    background-color: #333;
+    margin: 0 auto; /* Ajout de cette ligne */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color: #00ffcc;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #00997a;
+}
+
+legend {
+    color: #00ffcc;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,78 @@
+body {
+    background-color: #37103b; /* Violet foncé */
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Police de caractères moderne */
+    color: #fff; /* Couleur de texte blanche */
+}
+
+/* Styles pour les titres */
+h1 {
+
+    font-size: 70px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #00ffcc;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 18px; /* Taille de police légèrement augmentée */
+    color: #a8dadc; /* Bleu-vert */
+}
+
+/* Style du formulaire de connexion */
+.login-form {
+    max-width: 400px; /* Largeur maximale réduite */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1); /* Fond semi-transparent */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3); /* Ombre légère */
+}
+
+/* Styles pour les boutons */
+button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; /* Augmentation du rembourrage */
+    font-size: 16px;
+    border-radius: 20px; /* Coins arrondis */
+    transition: background-color 0.3s, color 0.3s; /* Transition en douceur */
+}
+button img {
+    width: 35px;
+    height: 35px;
+}
+
+button:hover {
+    background-color: white; /* Vert foncé au survol */
+    color: #fff; /* Texte blanc au survol */
+}
+
+/* Style pour le bouton de déconnexion */
+.deconnecter-btn {
+    display: inline-block;
+    margin-top: 20px; /* Marge supérieure ajoutée */
+    color: #fff;
+    background-color: #ff5722; /* Orange vif */
+    border-radius: 25px; /* Coins arrondis plus prononcés */
+    padding: 15px 30px; /* Rembourrage augmenté */
+    font-size: 18px; /* Taille de police augmentée */
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.deconnecter-btn:hover {
+    background-color: #ff6e40; /* Orange plus foncé au survol */
+}
